@@ -1,0 +1,110 @@
+@import '@fontsource/inter';
+@import '@fontsource/inter/500.css';
+
+body {
+    font-family: Inter, sans-serif;
+    color: rgb(9 35 41);
+}
+
+[popover] {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    outline-offset: 3px;
+    outline-color: #458fff;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.gap-2 {
+    gap: 1rem;
+}
+
+.popover-menu {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background: var(--neutral-neutral-white, #fff);
+    border: 1px solid var(--borders-default, #d6dee5);
+    border-radius: 6px;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.08);
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+label span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+input {
+    display: flex;
+    height: 2.25rem;
+    padding: var(--spacing-spacing-8-px, 8px) var(--spacing-spacing-12-px, 12px);
+    align-items: center;
+    gap: var(--spacing-spacing-12-px, 12px);
+    align-self: stretch;
+    border-radius: 6px;
+    border: 1px solid var(--border-border-default, #d6dee5);
+    background: var(--neutral-colors-neutral-18, #fff);
+    padding: 0 1rem;
+    font-family: inherit;
+}
+
+button {
+    display: inline-flex;
+    font-family: inherit;
+    min-width: 88px;
+    font-weight: 500;
+    padding: 8px var(--spacing-spacing-16-px, 16px);
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid var(--border-border-subdeud, #c9cccf);
+    background: var(--button-secondary-button-secondary-default, #fff);
+    color: var(--button-primary-button-primary-default, var(--primary-colors-primary-2, #2253dd));
+    outline-offset: 3px;
+    outline-color: #458fff;
+}
+
+button.tertiary {
+    border: none;
+    background: none;
+    padding: 0 0.5rem;
+    color: rgb(9 35 41);
+}
+
+button.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    background: none;
+    border: none;
+    color: rgb(9 35 41);
+    min-width: unset;
+}

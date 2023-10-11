@@ -1,38 +1,16 @@
-# create-svelte
+Testing the HTML Popover API and CSS anchor positioning.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Not production ready, browser support is limited.
 
-## Creating a project
+https://caniuse.com/?search=popover
 
-If you're seeing this, you've probably already done this step. Congrats!
+CSS anchor positioning requires "Experimental web platform features" enabled in chrome://flags.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Highlights
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+-   Popovers are added to the "top layer", meaning nothing will overlap it
+-   Clickable backdrop built in
+-   Closes on escape
+-   Focus is managed for us, including returning focus when popover closes
+-   Screen readers know what it is
+-   CSS anchor positioning allows us to tether popovers to their toggle. It also supports fallback positions.
