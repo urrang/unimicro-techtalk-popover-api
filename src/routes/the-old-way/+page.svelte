@@ -7,7 +7,7 @@
         - Clickable backdrop to close popover
         - Close popover when Escape is pressed
         - Focus popover when it becomes visible
-        - Return focus to the element that opened the popover when it closes
+        - Return focus to the element that opened the popover when it's closed
         - Add library for positioning, e.g FloatingUI
         - Add library for portals to avoid other fixed content clipping the popover
     */
